@@ -27,6 +27,9 @@
   "dependencies": {
     "a": "workspace:^0.0.1"
   },
+  "devDependencies": {
+    "b": "workspace:^0.0.1"
+  },
   "dependenciesMeta": {
     "a": {
       "injected": true

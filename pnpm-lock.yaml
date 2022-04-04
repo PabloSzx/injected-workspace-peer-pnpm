@@ -14,8 +14,11 @@ importers:
   packages/c:
     specifiers:
       a: workspace:^0.0.1
+      b: workspace:^0.0.1
     dependencies:
       a: file:packages/a
+    devDependencies:
+      b: link:../b
     dependenciesMeta:
       a:
         injected: true
