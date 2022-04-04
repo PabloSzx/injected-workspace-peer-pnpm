@@ -1,0 +1,31 @@
+lockfileVersion: 5.3
+
+importers:
+
+  packages/a:
+    specifiers:
+      b: workspace:^0.0.1
+    devDependencies:
+      b: link:../b
+
+  packages/b:
+    specifiers: {}
+
+  packages/c:
+    specifiers:
+      a: workspace:^0.0.1
+    dependencies:
+      a: file:packages/a
+    dependenciesMeta:
+      a:
+        injected: true
+
+packages:
+
+  file:packages/a:
+    resolution: {directory: packages/a, type: directory}
+    name: a
+    version: 0.0.1
+    peerDependencies:
+      b: workspace:^0.0.1
+    dev: false

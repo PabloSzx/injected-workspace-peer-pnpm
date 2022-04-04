@@ -1,0 +1,12 @@
+{
+  "name": "c",
+  "version": "0.0.1",
+  "dependencies": {
+    "a": "workspace:^0.0.1"
+  },
+  "dependenciesMeta": {
+    "a": {
+      "injected": true
+    }
+  }
+}
